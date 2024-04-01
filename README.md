@@ -1,7 +1,7 @@
 # Nuscenes_tutorial
 ## conda
 ```
-conda create -n nuscenes_tutorial python=3.8
+conda create -n nuscenes_tutorial python=3.8 -y
 
 conda activate nuscenes_tutorial
 ```
