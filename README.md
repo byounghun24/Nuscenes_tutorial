@@ -8,3 +8,6 @@ tar -xf v1.0-mini.tgz -C /data/sets/nuscenes  # Uncompress the nuScenes mini spl
 
 pip install nuscenes-devkit &> /dev/null  # Install nuScenes.
 ```
+```
+git clone https://github.com/byounghun24/Nuscenes_tutorial.git
+```
