@@ -1,6 +1,6 @@
 # Nuscenes_tutorial
 
-mkdir -p /data/datasets/nuscenes  # Make the directory to store the nuScenes dataset in.
+< mkdir -p /data/datasets/nuscenes  # Make the directory to store the nuScenes dataset in. >
 
 wget https://www.nuscenes.org/data/v1.0-mini.tgz  # Download the nuScenes mini split.
 
