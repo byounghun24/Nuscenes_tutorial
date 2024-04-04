@@ -468,6 +468,41 @@ class My_NuScenesExplorer(NuScenesExplorer):
                         no_near_pts += 1
         return distance_array, depth_diff_array, no_near_pts
     
+    # def get_depth(self,
+    #               pointsensor_token: list,
+    #               pointsensor_channel: list,
+    #               nsweeps: int = 1,
+    #               ):
+        
+    #     distance_list = []
+    
+    #     for k in range(len(pointsensor_token)):
+    #         pointsensor = self.nusc.get('sample_data', pointsensor_token[k])
+
+    #         sample_rec = self.nusc.get('sample', pointsensor['sample_token'])
+    #         chan = pointsensor['channel']
+    #         ref_chan = 'LIDAR_TOP'
+    #         ref_sd_token = sample_rec['data'][ref_chan]
+    #         ref_sd_record = self.nusc.get('sample_data', ref_sd_token)
+
+    #         # pcl_path = osp.join(self.nusc.dataroot, pointsensor['filename'])
+    #         # All pc transformed to LiDAR Coordinate
+    #         if 'LIDAR_TOP' in pointsensor_channel:
+    #             # pc = LidarPointCloud.from_file(pcl_path)
+    #             pc, _ = LidarPointCloud.from_file_multisweep(self.nusc, sample_rec, chan, ref_chan, nsweeps=nsweeps)
+    #         else:
+    #             # pc = RadarPointCloud.from_file(pcl_path)
+    #             pc, _ = RadarPointCloud.from_file_multisweep(self.nusc, sample_rec, chan, ref_chan, nsweeps=nsweeps)
+    #         x = pc.points[0, :]
+    #         y = pc.points[1, :]
+
+    #         distance_from_lidar_BEV = [math.sqrt(math.pow(x[i],2) + math.pow(y[i],2)) for i in range(len(pc.points[0]))]
+    #         distance_list.extend(distance_from_lidar_BEV)
+        
+    #     return distance_list
+
+
+    
     def abc(self, n):
         a = [n+1]
         b = [n+2]
