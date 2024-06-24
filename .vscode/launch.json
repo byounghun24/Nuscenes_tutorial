@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "test.py",
+            "name": "visualization_debugging.py",
             "type": "debugpy",
             "request": "launch",
-            "program": "/home/byounghun/workspace/Nuscenes_tutorial/test.py",
+            "program": "/workspace/Nuscenes_tutorial/visualization_debugging.py",
             "console": "integratedTerminal",
             "justMyCode": false
         }
