@@ -156,6 +156,31 @@ class My_NuScenes(NuScenes):
             sensor = sensor,
             frame_idx = frame_idx,
             nsweeps = nsweeps)
+    
+    def map_multiview_pointcloud_to_image(self,
+                                pointsensor_token: list,
+                                pointsensor_channel: list,
+                                camera_token: list,
+                                camera_channel: list,
+                                nsweeps: int = 1,
+                                min_dist: float = 1.0,
+                                render_intensity: bool = False,
+                                show_lidarseg: bool = False,
+                                filter_lidarseg_labels: List = None,
+                                lidarseg_preds_bin_path: str = None,
+                                show_panoptic: bool = False) -> Tuple:
+        return self.explorer.map_multiview_pointcloud_to_image(
+                                pointsensor_token,
+                                pointsensor_channel,
+                                camera_token,
+                                camera_channel,
+                                nsweeps,
+                                min_dist = min_dist,
+                                render_intensity = render_intensity,
+                                show_lidarseg = show_lidarseg,
+                                filter_lidarseg_labels = filter_lidarseg_labels,
+                                lidarseg_preds_bin_path = lidarseg_preds_bin_path,
+                                show_panoptic = show_panoptic)
         
 class My_NuScenesExplorer(NuScenesExplorer):
 
